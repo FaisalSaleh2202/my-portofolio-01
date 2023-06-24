@@ -14,6 +14,36 @@ const Navbar = () => {
 
   return (
     <>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            key='a box'
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            //Specified Exit animation
+            exit={{ opacity: 0, x: -50 }}
+            className={` ${styles.xPaddings} absolute z-[999]`}
+          >
+            <div className='bg-black h-screen sm:w-fit w-fit'>
+              <ul className='flex flex-col items-center pt-[100px]'>
+                {navigations.map((navigation) => (
+                  <Link
+                    className='my-3 flex  gap-5'
+                    key={navigation.id}
+                    href={navigation.link}
+                  >
+                    {navigation.icon} {navigation.title}
+                  </Link>
+                ))}
+              </ul>
+              <div className='flex flex-col items-center m-6 p-6 mt-[250px] bg-orange-500 text-black rounded-lg shadow-md shadow-orange-400'>
+                <span>made with 🤍</span>
+                <p>Faisal Saleh</p>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
       <motion.nav
         variants={navVariants}
         initial='hidden'
@@ -40,32 +70,6 @@ const Navbar = () => {
           </button>
         </div>
       </motion.nav>
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            key='a box'
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            //Specified Exit animation
-            exit={{ opacity: 0, x: -50 }}
-            className={` ${styles.xPaddings} absolute z-[999]`}
-          >
-            <div className='bg-black h-screen sm:w-[250%] w-[175%]'>
-              <ul className='flex flex-col px-auto'>
-                {navigations.map((navigation) => (
-                  <Link
-                    className='my-3 flex  gap-5'
-                    key={navigation.id}
-                    href={navigation.link}
-                  >
-                    {navigation.icon} {navigation.title}
-                  </Link>
-                ))}
-              </ul>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </>
   );
 };
