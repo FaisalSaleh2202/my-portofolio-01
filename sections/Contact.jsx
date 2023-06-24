@@ -13,6 +13,7 @@ const Contact = () => {
       <div className={`grid sm:grid-cols-4 grid-cols-2 gap-8`}>
         {contacts.map((contact) => (
           <button
+            key={contact.id}
             className={`${contact.bg} ${contact.shaowBg} w-[160px] py-3 rounded-[25px] shadow-md  `}
           >
             {contact.icon} {contact.text}

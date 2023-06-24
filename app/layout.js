@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <head></head>
-      <body className={inter.className}>
+      <body suppressHydrationWarning={true} className={inter.className}>
         <motion.nav
           variants={navVariants}
           initial='hidden'
@@ -51,27 +51,28 @@ export default function RootLayout({ children }) {
             </button>
           </div>
         </motion.nav>
-        {/* <AnimatePresence> */}
-        {isOpen && (
-          <motion.div
-            key='a box'
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            //Specified Exit animation
-            exit={{ opacity: 0, x: -50 }}
-            className={` ${styles.xPaddings} absolute z-[999] `}
-          >
-            <div className='bg-black h-screen sm:w-[500%] w-[250%]'>
-              <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>My Works</li>
-                <li>Contact</li>
-              </ul>
-            </div>
-          </motion.div>
-        )}
-        {/* </AnimatePresence> */}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              key='a box'
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              //Specified Exit animation
+              exit={{ opacity: 0, x: -50 }}
+              className={` ${styles.xPaddings} absolute z-[999] `}
+            >
+              <div className='bg-black h-screen sm:w-[500%] w-[250%]'>
+                <ul>
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>My Works</li>
+                  <li>Contact</li>
+                </ul>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
         {children}
       </body>
     </html>

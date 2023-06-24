@@ -17,13 +17,17 @@ const MyProjects = () => {
           className={`${styles.innerWidth} grid sm:grid-cols-2 grid-cols-1 gap-4`}
         >
           {myWorks.map((myWork) => (
-            <div class='relative cursor-pointer px-6'>
-              <Image src={myWork.image} className='h-[200px] w-fit' />
+            <div key={myWork.id} className='relative cursor-pointer px-6'>
+              <Image
+                src={myWork.image}
+                alt={myWork.title}
+                className='h-[200px] w-fit'
+              />
               <motion.div
                 variants={cardVariants}
                 initial='hidden'
                 whileHover='show'
-                class='absolute bottom-0 mx-4 w-auto h-[200px] left-0 text-white bg-slate-900 bg-opacity-50 flex flex-col items-center'
+                className='absolute bottom-0 mx-4 w-auto h-[200px] left-0 text-white bg-slate-900 bg-opacity-50 flex flex-col items-center'
               >
                 <p className='pt-12 text-[22px] text-center font-bold drop-shadow-md px-2'>
                   {myWork.title}

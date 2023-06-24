@@ -5,6 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 export const contacts = [
   {
+    id: 1,
     link: 'mailto:faisal.saleh127@gmail.com',
     text: 'Email',
     icon: <AlternateEmailOutlinedIcon />,
@@ -12,6 +13,7 @@ export const contacts = [
     shaowBg: 'shadow-red-400',
   },
   {
+    id: 2,
     link: 'https://wa.me/081283993386',
     text: 'Phone',
     icon: <PhoneEnabledOutlinedIcon />,
@@ -19,6 +21,7 @@ export const contacts = [
     shaowBg: 'shadow-green-400',
   },
   {
+    id: 3,
     link: 'https://wa.me/081283993386',
     text: 'Linkedln',
     icon: <LinkedInIcon />,
@@ -27,6 +30,7 @@ export const contacts = [
     shaowBg: 'shadow-blue-500',
   },
   {
+    id: 4,
     link: 'https://wa.me/081283993386',
     text: 'Github',
     icon: <GitHubIcon />,
