@@ -9,8 +9,8 @@ import { contacts } from '../utils/data-contact.js';
 
 const Contact = () => {
   return (
-    <section className={`${styles.xPaddings}`}>
-      <div className={`grid sm:grid-cols-4 grid-cols-2 gap-8 ml-4 `}>
+    <section className={`${styles.xPaddings} mx-6`}>
+      <div className={`grid sm:grid-cols-4 grid-cols-2 gap-8`}>
         {contacts.map((contact) => (
           <button
             className={`${contact.bg} ${contact.shaowBg} w-[160px] py-3 rounded-[25px] shadow-md  `}

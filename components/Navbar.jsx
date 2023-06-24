@@ -12,8 +12,12 @@ const Navbar = () => (
     whileInView='show'
     className={`${styles.xPaddings} py-6 relative`}
   >
-    <div className={`${styles.innerWidth} flex justify-between`}>
-      <img src='/letter-f.png' className='w-[64px] h-[64px] ' alt='logo' />
+    <div className={`flex justify-between px-4`}>
+      <img
+        src='/letter-f.png'
+        className='sm:w-[64px] sm:h-[64px] h-[46px] w-[46px] '
+        alt='logo'
+      />
       <img
         src='./menu.svg'
         alt='menu'
