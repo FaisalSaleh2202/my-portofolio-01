@@ -1,3 +1,5 @@
+'use client'
+
 import '../styles/globals.css';
 import { Inter } from 'next/font/google';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -5,7 +7,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
 import { MaterialUISwitch } from '../utils/swith-dark-mode';
-import { useState } from 'react';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 
 const inter = Inter({ subsets: ['latin'] });
