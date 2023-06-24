@@ -22,33 +22,31 @@ const Hero = () => {
             variants={textVariant(1.3)}
             className={`sm:text-[38px] text-[24px] font-extrabold`}
           >
-            <span className='text-pink-800'> Hi... </span> Saya Faisal Saleh.
+            <span className='text-yellow-300'> Hi... </span> Saya Faisal Saleh.
           </motion.h1>
           <motion.p
             variants={textVariant(1.6)}
             className={`mx-auto sm:text-[22px] text-[16px] my-3 leading-10`}
           >
-            {' '}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iure,
-            distinctio molestiae numquam natus officia asperiores veritatis?
+            Lulusan Teknik Informatika dari Universitas Indraprasta PGRI 🎓.
+            ReactJs Developer bersertifikat Dicoding Indonesia dan Kampus
+            Merdeka
           </motion.p>
           <motion.p
             variants={textVariant(1.9)}
-            className={`mx-auto sm:text-[22px] text-[16px] my-3 text-yellow-500 leading-10`}
+            className={`mx-auto sm:text-[22px] text-[16px] my-3 text-green-500 leading-10`}
           >
-            {' '}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            dengan 2 tahun pengalaman dalam ReactJs, NextJs, React Hooks, React
+            Router, Javascript, Tailwind CSS, CSS
           </motion.p>
           <motion.p
             variants={textVariant(2.1)}
             className={`mx-auto sm:text-[22px] text-[16px] my-3 leading-10`}
           >
-            distinctio molestiae numquam natus officia asperiores veritatis?
-            Asperiores, aspernatur fugiat officiis{' '}
-            <span className='text-green-500'>
-              sit? Quod dolorem porro expedita?{' '}
-            </span>{' '}
-            libero eum molestias nemo
+            dalam mengembangkan{' '}
+            <span className='text-blue-400'>Front-End Web 🌐 </span> Front-End
+            Web yang responsif, reusable, performa yang baik, memiliki
+            aksesibilitas yang baik, dan mudah di-maintenance
           </motion.p>
         </div>
       </motion.div>

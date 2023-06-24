@@ -13,7 +13,7 @@ const MyProjects = () => {
   return (
     <section className={`${styles.xPaddings}`}>
       <div className={`${styles.innerWidth} sm:mx-6 my-12`}>
-        <h1 className='text-[28px] font-bold my-6 text-center'>My Works</h1>
+        <h1 className='text-[28px] font-bold my-6'>My Works</h1>
         <div
           className={`${styles.innerWidth} grid sm:grid-cols-2 grid-cols-1 gap-4`}
         >
