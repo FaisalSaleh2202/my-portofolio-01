@@ -4,7 +4,7 @@ import { useState } from 'react';
 import '../styles/globals.css';
 import { Inter } from 'next/font/google';
 
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { textVariant, navVariants } from '../utils/motion';
@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
             </button>
           </div>
         </motion.nav>
-        <AnimatePresence>
+        {/* <AnimatePresence> */}
           {isOpen && (
             <motion.div
               key='a box'
@@ -71,7 +71,7 @@ export default function RootLayout({ children }) {
               </div>
             </motion.div>
           )}
-        </AnimatePresence>
+        {/* </AnimatePresence> */}
 
         {children}
       </body>
