@@ -8,7 +8,7 @@ import { TextHeroHeading } from '@/components/TextHeroHeading';
 
 const Hero = () => {
   return (
-    <section className={`${styles.paddings} relative z-10 `}>
+    <section className={`${styles.paddings} `}>
       <motion.div
         variants={staggerContainer}
         initial='hidden'
@@ -17,7 +17,7 @@ const Hero = () => {
         className={`mx-auto  ${styles.xPaddings} flex-col text-justify`}
       >
         <TextHeroHeading title='PORTOFOLIO' textStyles='text-center' />
-        <div className='mx-auto flex-col justify-center items-center relative z-10'>
+        <div className='mx-auto flex-col justify-center items-center relative'>
           <motion.h1
             variants={textVariant(1.3)}
             className={`sm:text-[38px] text-[24px] font-extrabold`}
@@ -34,7 +34,7 @@ const Hero = () => {
           </motion.p>
           <motion.p
             variants={textVariant(1.9)}
-            className={`mx-auto sm:text-[22px] text-[16px] my-3 text-green-500 leading-10`}
+            className={`mx-auto sm:text-[22px] text-[16px] my-3 text-white-500 leading-10`}
           >
             dengan 2 tahun pengalaman dalam ReactJs, NextJs, React Hooks, React
             Router, Javascript, Tailwind CSS, CSS
