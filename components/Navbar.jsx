@@ -36,7 +36,7 @@ const Navbar = () => {
                   </Link>
                 ))}
               </ul>
-              <div className='flex flex-col items-center m-6 p-6 mt-[250px] bg-orange-500 text-black rounded-lg shadow-md shadow-orange-400'>
+              <div className='flex font-semibold flex-col items-center m-6 p-6 mt-[250px] bg-orange-500 text-white rounded-lg shadow-md shadow-orange-400'>
                 <span>made with 🤍</span>
                 <p>Faisal Saleh</p>
               </div>
