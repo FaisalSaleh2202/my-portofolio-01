@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
-import { MaterialUISwitch } from '@/utils/swith-dark-mode';
+import { MaterialUISwitch } from '../utils/swith-dark-mode';
 
 const Navbar = () => (
   <motion.nav

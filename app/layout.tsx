@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
-import { MaterialUISwitch } from '@/utils/swith-dark-mode';
+import { MaterialUISwitch } from '../utils/swith-dark-mode';
 import { useState } from 'react';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 
@@ -50,7 +50,6 @@ export default function RootLayout({ children }) {
             </button>
           </div>
         </motion.nav>
-
         <AnimatePresence>
           {isOpen && (
             <motion.div

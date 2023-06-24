@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { textVariant, staggerContainer } from '../utils/motion';
-import { TextHeroHeading } from '@/components/TextHeroHeading';
+import { TextHeroHeading } from '../components/TextHeroHeading';
 
 const Hero = () => {
   return (

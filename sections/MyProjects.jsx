@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { textVariant, staggerContainer, cardVariants } from '../utils/motion';
-import { TextHeroHeading } from '@/components/TextHeroHeading';
 import { contacts } from '../utils/data-contact.js';
 import { myWorks } from '../utils/data-my-works.js';
 import Image from 'next/image';
