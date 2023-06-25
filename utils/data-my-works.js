@@ -1,7 +1,7 @@
 import imageMyWork1 from '../public/my-work-1.png';
 import imageMyWork2 from '../public/my-work-2.png';
 
-export const myWorks = [
+let works = [
   {
     id: 1,
     image: imageMyWork1,
@@ -13,3 +13,14 @@ export const myWorks = [
     title: 'React Web App Forum Diskusi dengan Redux',
   },
 ];
+
+function getAllWorks() {
+  return works;
+}
+
+function getWork(id) {
+  const foundedWork = works.find((work) => work.id === id);
+  return foundedWork;
+}
+
+export { getAllWorks, getWork };

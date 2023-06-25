@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import styles from '../styles';
-import { navVariants } from '../utils/motion';
+import { navVariants, textVariant } from '../utils/motion';
 import { MaterialUISwitch } from '../utils/swith-dark-mode';
 import Link from 'next/link';
 import { navigations } from '../utils/data-nav';
@@ -24,7 +24,7 @@ const Navbar = () => {
             exit={{ opacity: 0, x: -50 }}
             className={` ${styles.xPaddings} absolute z-[999]`}
           >
-            <div className='bg-black h-screen sm:w-fit w-fit'>
+            <div className='bg-black h-screen sm:w-[200%] w-[125%]'>
               <ul className='flex flex-col items-center pt-[100px]'>
                 {navigations.map((navigation) => (
                   <Link
@@ -36,7 +36,7 @@ const Navbar = () => {
                   </Link>
                 ))}
               </ul>
-              <div className='flex font-semibold flex-col items-center m-6 p-6 mt-[250px] bg-orange-500 text-white rounded-lg shadow-md shadow-orange-400'>
+              <div className='flex font-semibold flex-col items-center justify-center mx-auto w-48 p-6 mt-[250px] bg-orange-500 text-white rounded-lg shadow-md shadow-orange-400'>
                 <span>made with 🤍</span>
                 <p>Faisal Saleh</p>
               </div>

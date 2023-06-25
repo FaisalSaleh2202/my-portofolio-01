@@ -1,3 +1,4 @@
 import Navbar from './Navbar';
+import { TextHeroHeading } from './TextHeroHeading';
 
-export { Navbar };
+export { Navbar, TextHeroHeading };

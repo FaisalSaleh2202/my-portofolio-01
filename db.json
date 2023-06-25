@@ -1,0 +1,14 @@
+{
+  "works": [
+    {
+      "id": 1,
+      "image": "../public/my-work-1.png",
+      "title": "React Web App Notes dengan SPA + API, Context dan Hooks"
+    },
+    {
+      "id": 2,
+      "image": "../public/my-work-2.png",
+      "title": "React Web App Forum Diskusi dengan Redux"
+    }
+  ]
+}

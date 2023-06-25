@@ -8,7 +8,7 @@ import { TextHeroHeading } from '../components/TextHeroHeading';
 
 const Hero = () => {
   return (
-    <section className={`${styles.paddings} `}>
+    <section className={`${styles.paddings}  `}>
       <motion.div
         variants={staggerContainer}
         initial='hidden'
@@ -29,8 +29,8 @@ const Hero = () => {
             className={`mx-auto sm:text-[22px] text-[16px] my-3 leading-10`}
           >
             Lulusan Teknik Informatika dari Universitas Indraprasta PGRI 🎓.
-            ReactJs Developer bersertifikat Dicoding Indonesia dan Kampus
-            Merdeka
+            <span className='text-pink-600'> React</span> Developer
+            bersertifikat Dicoding Indonesia dan Kampus Merdeka
           </motion.p>
           <motion.p
             variants={textVariant(1.9)}
