@@ -10,7 +10,7 @@ import Image from 'next/image';
 const HeroAbout = () => {
   return (
     <div
-      className={`${styles.xPaddings} flex mx-auto items-center sm:gap-20 justify-center relative m-6`}
+      className={`${styles.xPaddings} flex mx-auto items-center sm:gap-20 justify-center relative mx-8`}
     >
       <div className='flex-col gap-0 relative sm:mb-[200px] mb-[100px] top-0'>
         <h1 className='absoulte sm:text-[122px] text-[64px] font-extrabold text-orange-400 '>
