@@ -16,7 +16,7 @@ const Navbar = () => {
     <>
       <AnimatePresence>
         {isOpen && (
-          <motion.div
+          <motion.div 
             key='a box'
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -36,7 +36,7 @@ const Navbar = () => {
                   </Link>
                 ))}
               </ul>
-              <div className='flex font-semibold flex-col items-center justify-center mx-auto w-48 p-6 mt-[250px] bg-orange-500 text-white rounded-lg shadow-md shadow-orange-400'>
+              <div className='flex font-semibold flex-col items-center justify-center mx-auto w-48 p-6 mt-[250px] text-[#FB923C] rounded-lg shadow-md '>
                 <span>made with 🤍</span>
                 <p>Faisal Saleh</p>
               </div>
